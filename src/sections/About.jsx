@@ -1,0 +1,106 @@
+import { useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { Globe } from "../components/Globe";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const About = () => {
+  const sectionRef = useRef(null);
+  const rydeRef = useRef(null);
+  const libraryRef = useRef(null);
+  const ycDirectoryRef = useRef(null);
+
+  useGSAP(() => {
+    // Animation for the main section
+    gsap.fromTo(
+      sectionRef.current,
+      { opacity: 0 },
+      { opacity: 1, duration: 1.5 },
+    );
+
+    // Animations for each app showcase
+    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+
+    cards.forEach((card, index) => {
+      gsap.fromTo(
+        card,
+        {
+          y: 50,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay: 0.3 * (index + 1),
+          scrollTrigger: {
+            trigger: card,
+            start: "top bottom-=100",
+          },
+        },
+      );
+    });
+  }, []);
+
+  return (
+    <div id="about" ref={sectionRef} className="app-showcase">
+      <div className="w-full">
+        <div className="showcaselayout">
+          <div ref={rydeRef} className="first-project-wrapper">
+            <div className="image-wrapper">
+              {/* <img src="/images/coding-pov.png" alt="Ryde App Interface" className=""/> */}
+              <video src="/images/screen.mp4" autoPlay muted loop playsInline />
+            </div>
+            <div className="text-content">
+              <h2>Hi, I’m Hafsa</h2>
+              <p className="text-white-50 md:text-xl">
+                I developed my frontend and backend dev skills to deliver
+                dynamic and web applications.
+              </p>
+            </div>
+          </div>
+
+          <div className="project-list-wrapper overflow-hidden">
+            {/* <div className="project" ref={libraryRef}>
+              <div className="image-wrapper bg-[#FFEFDB]">
+                <figure className="">
+                  <Globe />
+                </figure>
+                {/* <img
+                  src="/images/project2.png"
+                  alt="Library Management Platform"
+                /> 
+              </div>
+              <h2>The Library Management Platform</h2>
+            </div> */}
+            <div
+              className="project p-6 bg-linear-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl row-span-1 md:col-span-3 h-60 md:h-65 relative overflow-hidden hover:-translate-y-1 duration-200"
+              ref={libraryRef}
+            >
+              <div className="z-10 w-[50%]">
+                <h2>Time Zone</h2>
+                <p className="text-neutral-400 text-sm md:text-base text-pretty">
+                  I'm based in Morocco, and open to remote work worldwide
+                </p>
+              </div>
+              <figure className="absolute left-[30%] top-[10%]">
+                <Globe />
+              </figure>
+            </div>
+
+            <div className="project" ref={ycDirectoryRef}>
+              <div className="image-wrapper bg-[#FFE7EB]">
+                <img src="/images/project3.png" alt="YC Directory App" />
+              </div>
+              <h2>YC Directory - A Startup Showcase App</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;

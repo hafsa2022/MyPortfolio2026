@@ -170,6 +170,10 @@ section {
         img {
           @apply w-full h-full object-cover rounded-xl absolute inset-0;
         }
+        
+        video {
+          @apply w-full h-full object-cover rounded-xl absolute inset-0;
+        }
       }
 
       .text-content {
@@ -470,3 +474,4 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+

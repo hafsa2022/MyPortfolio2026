@@ -1,8 +1,9 @@
-import { OrbitControls } from "@react-three/drei"
-import { Canvas } from "@react-three/fiber"
-import { useMediaQuery } from "react-responsive"
-import { Room } from "./Room"
-import HeroLights from "./HeroLights"
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { useMediaQuery } from "react-responsive";
+import  {Room}  from "./Room";
+import Particles from "./Particles";
+import HeroLights from "./HeroLights";
 
 const HeroExperience = () => {
     const isTablet = useMediaQuery({query: '(max-width:1024px)'});
@@ -11,6 +12,7 @@ const HeroExperience = () => {
     return (
     <Canvas camera={{position:[0, 0, 15], fov:45}}>
         <HeroLights />
+        <Particles count={100} />
         <OrbitControls 
             enablePan={false} 
             enableZoom={!isTablet}
