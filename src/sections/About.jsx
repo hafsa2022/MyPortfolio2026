@@ -45,16 +45,16 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" ref={sectionRef} className="app-showcase">
+    <div id="about" ref={sectionRef} className="about">
       <div className="w-full">
-        <div className="showcaselayout">
+        <div className="aboutlayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
               {/* <img src="/images/coding-pov.png" alt="Ryde App Interface" className=""/> */}
               <video src="/images/screen.mp4" autoPlay muted loop playsInline />
             </div>
             <div className="text-content">
-              <h2>Hi, I’m Hafsa</h2>
+              <h2>I’m Hafsa</h2>
               <p className="text-white-50 md:text-xl">
                 I developed my frontend and backend dev skills to deliver
                 dynamic and web applications.
@@ -75,10 +75,7 @@ const About = () => {
               </div>
               <h2>The Library Management Platform</h2>
             </div> */}
-            <div
-              className="project p-6 bg-linear-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl row-span-1 md:col-span-3 h-60 md:h-65 relative overflow-hidden hover:-translate-y-1 duration-200"
-              ref={libraryRef}
-            >
+            <div className="project grid-black-color grid-1" ref={libraryRef}>
               <div className="z-10 w-[50%]">
                 <h2>Time Zone</h2>
                 <p className="text-neutral-400 text-sm md:text-base text-pretty">

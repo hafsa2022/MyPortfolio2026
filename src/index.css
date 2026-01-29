@@ -154,10 +154,10 @@ section {
     }
   }
 
-  .app-showcase {
+  .about {
     @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
 
-    .showcaselayout {
+    .aboutlayout {
       @apply flex xl:flex-row flex-col gap-10 justify-between;
     }
 
@@ -170,7 +170,7 @@ section {
         img {
           @apply w-full h-full object-cover rounded-xl absolute inset-0;
         }
-        
+
         video {
           @apply w-full h-full object-cover rounded-xl absolute inset-0;
         }
@@ -203,7 +203,18 @@ section {
       h2 {
         @apply text-lg md:text-xl lg:text-2xl font-semibold mt-5;
       }
+      .grid-1 {
+        @apply row-span-1 md:col-span-3 h-[15rem] md:h-60 relative overflow-hidden hover:-translate-y-1 duration-200;
+      }
+      .grid-black-color {
+        @apply p-6 bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl;
+      }
     }
+  }
+
+  .projects {
+    @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20;
+
   }
 
   .cta-wrapper {
@@ -446,7 +457,8 @@ section {
   border: 2px solid transparent;
   background: var(--gradient);
   background-attachment: fixed;
-  mask: linear-gradient(#0000, #0000),
+  mask:
+    linear-gradient(#0000, #0000),
     conic-gradient(
       from calc((var(--start) - 15) * 1deg),
       #ffffff1f 0deg,
@@ -474,4 +486,3 @@ section {
 .card:hover::before {
   opacity: 1;
 }
-
