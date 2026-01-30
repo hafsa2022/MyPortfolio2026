@@ -106,7 +106,7 @@ const About = () => {
               </div>
               <img
                 src="/images/coding-pov.png"
-                alt="YC Directory App"
+                alt="Coding Pov"
                 className="absolute left-[30%] top-[10%] scale-[2]"
               />
             </div>

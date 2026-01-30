@@ -102,7 +102,7 @@ const widthRef = useRef(0);
   return (
     <div
       className={twMerge(
-        "mx-auto aspect-squarew-full max-w-150",
+        "mx-auto aspect-square w-full max-w-150",
         className
       )}
     >

@@ -414,7 +414,7 @@ const technologies = [
   },
   {
     name: "JavaScript",
-    icon: "/images/javascript.svg",
+    icon: "/images/javascript.png",
   },
   {
     name: "TypeScript",
@@ -424,28 +424,28 @@ const technologies = [
     name: "React JS",
     icon: "/images/react.svg",
   },
-  {
-    name: "Redux Toolkit",
-    icon: "/images/redux.png",
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: "/images/redux.png",
+  // },
   {
     name: "Vue JS",
     icon: "/images/vuejs.png",
   },
-  {
-    name: "Vuetify",
-    icon: "/images/vuetify.png",
-  },
-  {
-    name: "Vuex",
-    icon: "/images/vuex.png",
-  },
+  // {
+  //   name: "Vuetify",
+  //   icon: "/images/vuetify.png",
+  // },
+  // {
+  //   name: "Vuex",
+  //   icon: "/images/vuex.png",
+  // },
   {
     name: "Angular",
     icon: "/images/angular.png",
   },
   {
-    name: "OpenLayers",
+    name: "Openlayers",
     icon: "/images/openlayers.png",
   },
   {
