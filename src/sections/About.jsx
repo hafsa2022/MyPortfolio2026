@@ -87,11 +87,28 @@ const About = () => {
               </figure>
             </div>
 
-            <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+            {/* <div className="project" ref={ycDirectoryRef}>
+              <div className="image-wrapper">
+                <img src="/images/coding-pov.png" alt="YC Directory App" className="absolute left-[20%] top-[%] scale-[2]" />
+                
+                <h2>YC Directory - A Startup Showcase App</h2>
+              </div> */}
+            {/* <img src="/images/project3.png" alt="YC Directory App" /> */}
+            {/* <h2>YC Directory - A Startup Showcase App</h2> */}
+            {/* </div> */}
+
+            <div className="project grid-violet-color grid-1" ref={libraryRef}>
+              <div className="z-10 w-[50%]">
+                <h2>“First, solve the problem. Then, write the code.”</h2>
+                <p className="text-neutral-400 text-sm md:text-base text-pretty">
+                 — John Johnson
+                </p>
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <img
+                src="/images/coding-pov.png"
+                alt="YC Directory App"
+                className="absolute left-[30%] top-[10%] scale-[2]"
+              />
             </div>
           </div>
         </div>

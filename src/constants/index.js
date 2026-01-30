@@ -4,17 +4,17 @@ const navLinks = [
     link: "#about",
   },
   {
-    name: "Experience",
-    link: "#experience",
-  },
-  {
     name: "Skills",
     link: "#skills",
   },
-//   {
-//     name: "Testimonials",
-//     link: "#testimonials",
-//   },
+  {
+    name: "Projects",
+    link: "#projects",
+  },
+  {
+    name: "Experience",
+    link: "#experience",
+  },
 ];
 
 const words = [
@@ -31,41 +31,41 @@ const words = [
 //   { value: 90, suffix: "%", label: "Client Retention Rate" },
 // ];
 
-const logoIconsList = [
-  {
-    imgPath: "/images/logos/company-logo-1.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-2.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-3.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-4.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-5.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
-];
+// const logoIconsList = [
+//   {
+//     imgPath: "/images/logos/company-logo-1.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-2.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-3.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-4.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-5.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-6.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-7.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-8.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-9.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-10.png",
+//   },
+//   {
+//     imgPath: "/images/logos/company-logo-11.png",
+//   },
+// ];
 
 // const abilities = [
 //   {
@@ -141,59 +141,62 @@ const techStackIcons = [
   },
 ];
 
-const expCards = [
-  {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
-  },
-  {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
-    ],
-  },
-];
+// const expCards = [
+//   {
+//     review:
+//       "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+//     imgPath: "/images/exp1.png",
+//     logoPath: "/images/logo1.png",
+//     title: "Frontend Developer",
+//     date: "January 2023 - Present",
+//     responsibilities: [
+//       "Developed and maintained user-facing features for the Hostinger website.",
+//       "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
+//       "Optimized web applications for maximum speed and scalability.",
+//     ],
+//   },
+//   {
+//     review:
+//       "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+//     imgPath: "/images/exp2.png",
+//     logoPath: "/images/logo2.png",
+//     title: "Full Stack Developer",
+//     date: "June 2020 - December 2023",
+//     responsibilities: [
+//       "Led the development of Docker's web applications, focusing on scalability.",
+//       "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
+//       "Contributed to open-source projects that were used with the Docker ecosystem.",
+//     ],
+//   },
+//   {
+//     review:
+//       "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+//     imgPath: "/images/exp3.png",
+//     logoPath: "/images/logo3.png",
+//     title: "React Native Developer",
+//     date: "March 2019 - May 2020",
+//     responsibilities: [
+//       "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
+//       "Improved app performance and user experience through code optimization and testing.",
+//       "Coordinated with the product team to implement features based on feedback.",
+//     ],
+//   },
+// ];
 
-const expLogos = [
-  {
-    name: "logo1",
-    imgPath: "/images/logo1.png",
-  },
-  {
-    name: "logo2",
-    imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
-  },
-];
+// const expLogos = [
+//   {
+//     name: "logo1",
+//     imgPath: "/images/logo1.png",
+//   },
+//   {
+//     name: "logo2",
+//     imgPath: "/images/logo2.png",
+//   },
+//   {
+//     name: "logo3",
+//     imgPath: "/images/logo3.png",
+//   },
+// ];
 
 // const testimonials = [
 //   {
@@ -240,253 +243,438 @@ const expLogos = [
 //   },
 // ];
 
+const expCards = [
+  {
+    // imgPath: "/images/exp1.png",
+    logoPath: "/images/logo1.png",
+    title: "GIS Development - GEO LAMBERT SARL",
+    date: "Oct 2024 – Oct 2025",
+    responsibilities: [
+      "Developed web applications using React.js, Node.js, Python, and OpenLayers.",
+      "Designed and managed PostgreSQL databases.",
+      "Built and consumed RESTful APIs, ensuring smooth front-end and back-end integration",
+      "Automated data processing workflows using Python.",
+      "Used GitHub for version control and team collaboration",
+      "Designed user interfaces and prototypes with Figma",
+      "Wrote and maintained technical documentation",
+    ],
+  },
+  {
+    logoPath: "/images/logo2.png",
+    title: "GIS Development Intern – Q8MAPS",
+    date: "Apr 2024 – Sep 2024",
+    responsibilities: [
+      "Developed web applications using Vue.js, React.js, Laravel, and Leaflet.",
+      "Managed and maintained PostgreSQL databases.",
+      "Collaborated with the team on GIS-based application features.",
+    ],
+  },
+  {
+    logoPath: "/images/logo3.png",
+    title: "Front-End Development Intern – Nostrum Media",
+    date: "Dec 2023 – Dec 2023",
+    responsibilities: [
+      "Built responsive web interfaces using Vue.js and Tailwind CSS.",
+      "Integrated APIs and collaborated closely with the back-end team.",
+      "Used Git and GitHub for source code management and version control.",
+    ],
+  },
+  {
+    logoPath: "/images/logo4.png",
+    title: "Final Year Project Intern (PFE) – PETALENS",
+    date: "Fev 2023 – Aout 2023",
+    responsibilities: [
+      "Enhanced a marketing decision-support web application using Vue.js, Vuex, Vuetify, and Laravel.",
+      "Integrated Google Maps and managed data with PostgreSQL.",
+      "Containerized the application using Docker to standardize development and deployment environments.",
+      "Used GitHub for version control and team collaboration.",
+      "Worked in an Agile / Scrum environment (user stories, sprints, backlog, daily meetings).",
+    ],
+  },
+];
+
 const socialImgs = [
   {
     name: "GitHub",
     imgPath: "/images/github.png",
+    link: "https://github.com/hafsa2022",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/hafsa-el-akhdar-92b446198/",
   },
 ];
 
 const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "AI Resume Analyzer",
     description:
       "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      " AI-powered resume analysis",
+      "ATS score calculation to evaluate compatibility with recruitment systems",
+      "Resume ↔ job description matching",
+      "Simple dashboard to visualize results and key statistics",
+      "Clean and intuitive user interface",
     ],
-    href: "",
+    href: "https://ai-resume-analyser-roan.vercel.app/",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/images/project1.png",
     tags: [
       {
         id: 1,
         name: "React",
-        path: "/assets/logos/react.svg",
+        path: "/images/react.svg",
       },
       {
         id: 2,
-        name: "Express.js",
-        path: "/assets/logos/dotnet.svg",
+        name: "React Router",
+        path: "/images/react_router.png",
       },
       {
         id: 3,
-        name: "MongoDB",
-        path: "/assets/logos/efcore.png",
+        name: "Puter.js",
+        path: "/images/puter_js.png",
       },
       {
         id: 4,
         name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        path: "/images/tailwindcss.svg",
       },
     ],
   },
   {
     id: 2,
-    title: "Authentication & Authorization System",
-    description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+    title: "Movie Search Project",
+    description: "A simple web page that allows users to search for movies.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      // "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
+      // "Implemented role-based access control (RBAC) for fine-grained user permissions.",
+      // "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
+      // "Connected to a secure SQLite database for user data storage.",
     ],
-    href: "",
+    href: "https://movies-project-seven-psi.vercel.app/",
     logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    image: "/images/project2.png",
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        name: "React",
+        path: "/images/react.svg",
       },
       {
         id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
+        name: "Appwirte",
+        path: "/images/appwirte.png",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "TMDB API",
+        path: "/images/tmdb_api.png",
       },
     ],
   },
+
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Job Board",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A web application that allows users to search and get new opportunities easy and fast.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      // "Built a powerful rendering engine using OpenGL and C++.",
+      // "Developed a physics engine with collision detection and particle effects.",
+      // "Implemented a scripting system for easy game customization.",
+      // "Optimized performance with multi-threading and efficient memory management.",
     ],
-    href: "",
+    href: "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_codsoft-angular-bootstrap-activity-7134948433550815233-NnpR?utm_source=share&utm_medium=member_desktop",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/images/project3.png",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "Angular",
+        path: "/images/angular.png",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "Laravel",
+        path: "/images/laravel.png",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "JWT Auth",
+        path: "/images/jwt.png",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "PostgreSQL",
+        path: "/images/postgresql.png",
+      },
+      {
+        id: 5,
+        name: "Git",
+        path: "/images/git.svg",
       },
     ],
   },
   {
     id: 4,
-    title: "C++ Game Engine",
+    title: "Invoice Management App",
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      // "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
+      // "Implemented API interactions using .NET Core for a robust backend.",
+      // "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
+      // "Integrated SQLite for efficient client-side database storage.",
     ],
-    href: "",
+    href: "https://drive.google.com/file/d/1gRq4IS3QGc1CGuP4lUEA0WhLgKYJARH6/view?usp=sharing",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/images/project4.png",
     tags: [
       {
         id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
+        name: "Vue.js",
+        path: "/images/vuejs.png",
       },
       {
         id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Vuetify",
+        path: "/images/vuetify.png",
       },
       {
         id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
+        name: "Vuex",
+        path: "/images/vuex.png",
       },
       {
         id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
+        name: "PostgreSQL",
+        path: "/images/postgresql.png",
+      },
+      {
+        id: 5,
+        name: "Git",
+        path: "/images/git.svg",
       },
     ],
   },
   {
     id: 5,
-    title: "WordPress Custom Theme",
+    title: "Product Management App",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "This web application allows users to search, create, update, and delete products.",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      // "Built a powerful rendering engine using OpenGL and C++.",
+      // "Developed a physics engine with collision detection and particle effects.",
+      // "Implemented a scripting system for easy game customization.",
+      // "Optimized performance with multi-threading and efficient memory management.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/images/project5.png",
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
+        name: "Vue.js",
+        path: "/images/vuejs.png",
       },
       {
         id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
+        name: "Vuetify",
+        path: "/images/vuetify.png",
       },
       {
         id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
+        name: "Vuex",
+        path: "/images/vuex.png",
       },
       {
         id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
+        name: "PostgreSQL",
+        path: "/images/postgresql.png",
+      },
+      {
+        id: 5,
+        name: "Git",
+        path: "/images/git.svg",
       },
     ],
   },
   {
     id: 6,
-    title: "Online Learning Platform",
+    title: "Ecommerce Web",
     description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
+      "The E-Commerce project built with Spring Boot, Angular, JWT Authentication, and MariaDB is an innovative web application that allows users to browse and purchase a wide range of products.",
     subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
+      // "Built a powerful rendering engine using OpenGL and C++.",
+      // "Developed a physics engine with collision detection and particle effects.",
+      // "Implemented a scripting system for easy game customization.",
+      // "Optimized performance with multi-threading and efficient memory management.",
     ],
-    href: "",
+    href: "https://github.com/hafsa2022/ecommerce-website-frontend",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "/images/project6.png",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "Angular",
+        path: "/images/angular.png",
       },
       {
         id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
+        name: "Spring Boot",
+        path: "/images/spring_boot.png",
       },
       {
         id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
+        name: "Vuex",
+        path: "/images/vuex.png",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "MariaDB",
+        path: "/images/mariadb.png",
+      },
+      {
+        id: 5,
+        name: "JWT Auth",
+        path: "/images/jwt.png",
+      },
+      {
+        id: 6,
+        name: "Git",
+        path: "/images/git.svg",
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "URL Shortener",
+    description:
+      "A web page that allows users to shorten long URLs into shorter and easy-to-share links.",
+    subDescription: [
+      // "Built a powerful rendering engine using OpenGL and C++.",
+      // "Developed a physics engine with collision detection and particle effects.",
+      // "Implemented a scripting system for easy game customization.",
+      // "Optimized performance with multi-threading and efficient memory management.",
+    ],
+    href: "https://github.com/hafsa2022/url-shortener-frontend",
+    logo: "",
+    image: "/images/project7.png",
+    tags: [
+      {
+        id: 1,
+        name: "Angular",
+        path: "/images/angular.png",
+      },
+      {
+        id: 2,
+        name: "Laravel",
+        path: "/images/laravel.png",
+      },
+      {
+        id: 3,
+        name: "CSS",
+        path: "/images/css3.svg",
+      },
+      {
+        id: 4,
+        name: "Git",
+        path: "/images/git.svg",
       },
     ],
   },
 ];
 
+const technologies = [
+  {
+    name: "HTML 5",
+    icon: "/images/html5.svg",
+  },
+  {
+    name: "CSS 3",
+    icon: "/images/css3.svg",
+  },
+  {
+    name: "JavaScript",
+    icon: "/images/javascript.svg",
+  },
+  {
+    name: "TypeScript",
+    icon: "/images/typescript.png",
+  },
+  {
+    name: "React JS",
+    icon: "/images/react.svg",
+  },
+  {
+    name: "Redux Toolkit",
+    icon: "/images/redux.png",
+  },
+  {
+    name: "Vue JS",
+    icon: "/images/vuejs.png",
+  },
+  {
+    name: "Vuetify",
+    icon: "/images/vuetify.png",
+  },
+  {
+    name: "Vuex",
+    icon: "/images/vuex.png",
+  },
+  {
+    name: "Angular",
+    icon: "/images/angular.png",
+  },
+  {
+    name: "OpenLayers",
+    icon: "/images/openlayers.png",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "/images/tailwindcss.svg",
+  },
+  {
+    name: "Node JS",
+    icon: "/images/nodejs.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "/images/mongodb.png",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "/images/postgresql.png",
+  },
+  {
+    name: "git",
+    icon: "/images/git.svg",
+  },
+  {
+    name: "figma",
+    icon: "/images/figma.png",
+  },
+  {
+    name: "docker",
+    icon: "/images/docker.png",
+  },
+];
 
 export {
   words,
   // abilities,
-  logoIconsList,
+  // logoIconsList,
   // counterItems,
   expCards,
-  expLogos,
+  // expLogos,
   // testimonials,
   socialImgs,
   techStackIcons,
+  technologies,
   techStackImgs,
   navLinks,
   myProjects,

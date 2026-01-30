@@ -77,18 +77,6 @@ const widthRef = useRef(0);
     window.addEventListener("resize", onResize);
     onResize();
 
-    // const globe = createGlobe(canvasRef.current, {
-    //   ...config,
-    //   width: width * 2,
-    //   height: width * 2,
-    //   onRender: (state) => {
-    //     if (!pointerInteracting.current) phi += 0.005;
-    //     state.phi = phi + rs.get();
-    //     state.width = width * 2;
-    //     state.height = width * 2;
-    //   },
-    // });
-
     const globe = createGlobe(canvasRef.current, {
         ...config,
         width: widthRef.current  * 2,
