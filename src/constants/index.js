@@ -68,8 +68,8 @@ const techStackIcons = [
   },
   // {
   //   name: "Interactive Developer",
-  //   modelPath: "/models/three.js-transformed.glb",
-  //   scale: 0.05,
+  //   modelPath: "/models/.glb",
+  //   scale: 3,
   //   rotation: [0, 0, 0],
   // },
   {
