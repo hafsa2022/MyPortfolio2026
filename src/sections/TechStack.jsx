@@ -65,7 +65,7 @@ const TechStack = () => {
                     text and make it take up the full width of the component. */}
                 <div className="padding-x w-full">
                   {/* The p tag contains the name of the tech stack icon. */}
-                  <p>{techStackIcon.name}</p>
+                  {/* <p>{techStackIcon.name}</p> */}
                 </div>
               </div>
             </div>
