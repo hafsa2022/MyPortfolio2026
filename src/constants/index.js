@@ -66,12 +66,24 @@ const techStackIcons = [
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
-  // {
-  //   name: "Interactive Developer",
-  //   modelPath: "/models/.glb",
-  //   scale: 3,
-  //   rotation: [0, 0, 0],
-  // },
+  {
+    name: "Interactive Developer",
+    modelPath: "/models/mongodb-transformed.glb",
+    scale: 250,
+    rotation: [0, Math.PI / 2, 0],
+  },
+  {
+    name: "Interactive Developer",
+    modelPath: "/models/laravel-transformed.glb",
+    scale: 5,
+    rotation: [0, 0, Math.PI],
+  },
+    {
+    name: "Interactive Developer",
+    modelPath: "/models/postgresql-transformed.glb",
+    scale: 65,
+    rotation: [0, 0, Math.PI ],
+  },
   {
     name: "Project Manager",
     modelPath: "/models/git-svg-transformed.glb",
@@ -186,8 +198,7 @@ const myProjects = [
     id: 2,
     title: "Movie Search Project",
     description: "A simple web page that allows users to search for movies.",
-    subDescription: [
-    ],
+    subDescription: [],
     href: "https://movies-project-seven-psi.vercel.app/",
     logo: "",
     image: "/images/project2.png",
@@ -215,8 +226,7 @@ const myProjects = [
     title: "Job Board",
     description:
       "A web application that allows users to search and get new opportunities easy and fast.",
-    subDescription: [
-    ],
+    subDescription: [],
     href: "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_codsoft-angular-bootstrap-activity-7134948433550815233-NnpR?utm_source=share&utm_medium=member_desktop",
     logo: "",
     image: "/images/project3.png",
@@ -253,8 +263,7 @@ const myProjects = [
     title: "Invoice Management App",
     description:
       "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-    subDescription: [
-    ],
+    subDescription: [],
     href: "https://drive.google.com/file/d/1gRq4IS3QGc1CGuP4lUEA0WhLgKYJARH6/view?usp=sharing",
     logo: "",
     image: "/images/project4.png",
@@ -291,9 +300,7 @@ const myProjects = [
     title: "Product Management App",
     description:
       "This web application allows users to search, create, update, and delete products.",
-    subDescription: [
-
-    ],
+    subDescription: [],
     href: "",
     logo: "",
     image: "/images/project5.png",
@@ -330,8 +337,7 @@ const myProjects = [
     title: "Ecommerce Web",
     description:
       "The E-Commerce project built with Spring Boot, Angular, JWT Authentication, and MariaDB is an innovative web application that allows users to browse and purchase a wide range of products.",
-    subDescription: [
-    ],
+    subDescription: [],
     href: "https://github.com/hafsa2022/ecommerce-website-frontend",
     logo: "",
     image: "/images/project6.png",
@@ -373,8 +379,7 @@ const myProjects = [
     title: "URL Shortener",
     description:
       "A web page that allows users to shorten long URLs into shorter and easy-to-share links.",
-    subDescription: [
-    ],
+    subDescription: [],
     href: "https://github.com/hafsa2022/url-shortener-frontend",
     logo: "",
     image: "/images/project7.png",
