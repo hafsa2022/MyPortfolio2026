@@ -82,7 +82,7 @@ const About = () => {
                   I'm based in Morocco, and open to remote work worldwide
                 </p>
               </div>
-              <figure className="absolute left-[30%] top-[10%]">
+              <figure className="absolute left-[25%] top-[10%]">
                 <Globe />
               </figure>
             </div>
