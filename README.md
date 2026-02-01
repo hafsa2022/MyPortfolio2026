@@ -63,9 +63,7 @@ Make sure you have the following installed:
 
     npm run dev
 
-Open your browser and visit:
-
-  http://localhost:5173
+Open http://localhost:5173 in your browser to view the project.
 
 ⭐ Acknowledgements
 
