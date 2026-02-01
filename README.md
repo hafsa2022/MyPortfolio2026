@@ -41,24 +41,25 @@ Make sure you have the following installed:
 
 
 📥 Clone the Repository
-git clone https://github.com/hafsa2022/MyPortfolio2026.git
-cd your-portfolio-repo
+    git clone https://github.com/hafsa2022/MyPortfolio2026.git
+    cd MyPortfolio2026
 
-📦 Install Dependencies
-npm install
+📦 Install Dependencies:
+
+    npm install
 
 🔐 Environment Variables
 
-Create a .env file in the root directory and add:
+  Create a .env file in the root directory and add:
 
-VITE_APP_EMAILJS_SERVICE_ID=
-VITE_APP_EMAILJS_TEMPLATE_ID=
-VITE_APP_EMAILJS_PUBLIC_KEY=
+  VITE_APP_EMAILJS_SERVICE_ID=
+  VITE_APP_EMAILJS_TEMPLATE_ID=
+  VITE_APP_EMAILJS_PUBLIC_KEY=
 
-Replace these values with your EmailJS credentials to enable the contact form.
+  Replace these values with your EmailJS credentials to enable the contact form.
 
 ▶️ Run the Project
-npm run dev
+  npm run dev
 
 
 Open your browser and visit:
