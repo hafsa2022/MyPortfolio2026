@@ -1,5 +1,5 @@
-<div align="center">**🌐 3D Portfolio Website** </div>
-**This text is bold**🤖 Introduction
+<div align="center"><h1>3D Portfolio Website </h1></div>
+<h2>🤖 Introduction</h2>
 
 This project is a modern 3D portfolio website designed to showcase my skills, projects, and experience in an interactive and visually engaging way.
 It features animated 3D models, smooth camera transitions, and responsive layouts, making it ideal for presenting creative and technical work in a professional manner.
