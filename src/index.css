@@ -289,11 +289,11 @@ section {
   }
 
   .tech-grid {
-    @apply grid xl:grid-cols-7 md:grid-cols-7 grid-cols-1 xl:gap-7 md:gap-10 gap-5 mt-16;
+    @apply grid xl:grid-cols-5 md:grid-cols-5 grid-cols-1 xl:gap-5 md:gap-18 gap-5 mt-16;
   }
 
   .tech-icon-wrapper {
-    @apply flex justify-center items-center w-42 h-50 relative;
+    @apply flex justify-center items-center w-52 h-50 relative;
   }
 
   form {

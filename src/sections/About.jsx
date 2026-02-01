@@ -99,8 +99,8 @@ const About = () => {
 
             <div className="project grid-violet-color grid-1" ref={libraryRef}>
               <div className="z-10 w-[50%]">
-                <h2>“First, solve the problem. Then, write the code.”</h2>
-                <p className="text-neutral-400 text-sm md:text-base text-pretty">
+                <h3 className="font-bold">“First, solve the problem. Then, write the code.”</h3>
+                <p className="text-sm md:text-base text-pretty">
                  — John Johnson
                 </p>
               </div>
