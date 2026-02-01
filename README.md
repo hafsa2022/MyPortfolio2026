@@ -26,9 +26,8 @@ The goal of this portfolio is to stand out by combining web development and 3D e
   <li>Multi-section layout</li>
   <li>Optimized 3D experience for mobile devices</li>
   <li>Clean code structure and reusable components</li>
-
+  
 <h2>🤸 Quick Start</h2>
-
 Follow these steps to run the project locally.
 
 ✅ Prerequisites
@@ -39,6 +38,7 @@ Make sure you have the following installed:
   <li>Node.js</li>
   <li>npm</li>
 </ul>
+
 
 📥 Clone the Repository
 git clone https://github.com/hafsa2022/MyPortfolio2026.git
