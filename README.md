@@ -59,6 +59,7 @@ Make sure you have the following installed:
   Replace these values with your EmailJS credentials to enable the contact form.
 
 ▶️ Run the Project:
+
     npm run dev
 
 Open your browser and visit:
