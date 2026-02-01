@@ -1,5 +1,4 @@
 <div align="center"><h1>3D Portfolio Website </h1></div>
-
 <h2>🤖 Introduction</h2>
 This project is a modern 3D portfolio website designed to showcase my skills, projects, and experience in an interactive and visually engaging way.
 It features animated 3D models, smooth camera transitions, and responsive layouts, making it ideal for presenting creative and technical work in a professional manner.
@@ -17,21 +16,16 @@ The goal of this portfolio is to stand out by combining web development and 3D e
   <li>Tailwind CSS</li>
 </ul>
 
-🔋 Features
-
-👉 Interactive and animated 3D models
-👉 Smooth GSAP-powered animations and scroll effects
-👉 Realistic lighting and shadows
-👉 Responsive design using Tailwind CSS and Flexbox/Grid
-👉 Micro-interactions for better user experience
-👉 Multi-section layout:
-
-About
-Projects
-Experience
-Contact
-👉 Optimized 3D experience for mobile devices
-👉 Clean code structure and reusable components
+<h2>🔋 Features</h2>
+<ul>
+  <li>Interactive and animated 3D models</li>
+  <li>Smooth GSAP-powered animations and scroll effects</li>
+  <li>Realistic lighting and shadows</li>
+  <li>Responsive design using Tailwind CSS and Flexbox/Grid</li>
+  <li>Micro-interactions for better user experience</li>
+  <li>Multi-section layout</li>
+  <li>Optimized 3D experience for mobile devices</li>
+  <li>Clean code structure and reusable components</li>
 
 <h2>🤸 Quick Start</h2>
 
@@ -40,15 +34,14 @@ Follow these steps to run the project locally.
 ✅ Prerequisites
 
 Make sure you have the following installed:
+<ul>
+  <li>Git</li>
+  <li>Node.js</li>
+  <li>npm</li>
+</ul>
 
-Git
-
-Node.js
-
-npm
-
-<h2>📥 Clone the Repository</h2>
-git clone https://github.com/your-username/your-portfolio-repo.git
+📥 Clone the Repository
+git clone https://github.com/hafsa2022/MyPortfolio2026.git
 cd your-portfolio-repo
 
 📦 Install Dependencies
