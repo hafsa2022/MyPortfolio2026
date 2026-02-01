@@ -1,26 +1,21 @@
 <div align="center"><h1>3D Portfolio Website </h1></div>
-<h2>🤖 Introduction</h2>
 
+<h2>🤖 Introduction</h2>
 This project is a modern 3D portfolio website designed to showcase my skills, projects, and experience in an interactive and visually engaging way.
 It features animated 3D models, smooth camera transitions, and responsive layouts, making it ideal for presenting creative and technical work in a professional manner.
 
 The goal of this portfolio is to stand out by combining web development and 3D experiences, while maintaining performance and accessibility across devices.
 
-##⚙️ Tech Stack
-
-Three.js
-
-React Three Fiber
-
-Drei
-
-GSAP
-
-React 19
-
-Vite
-
-Tailwind CSS
+<h2>⚙️ Tech Stack</h2>
+<ul>
+  <li>Three.js</li>
+  <li>React Three Fiber</li>
+  <li>Drei</li>
+  <li>GSAP</li>
+  <li>React 19</li>
+  <li>Vite</li>
+  <li>Tailwind CSS</li>
+</ul>
 
 🔋 Features
 
@@ -32,14 +27,13 @@ Tailwind CSS
 👉 Multi-section layout:
 
 About
-
 Projects
-
+Experience
 Contact
 👉 Optimized 3D experience for mobile devices
 👉 Clean code structure and reusable components
 
-🤸 Quick Start
+<h2>🤸 Quick Start</h2>
 
 Follow these steps to run the project locally.
 
@@ -53,7 +47,7 @@ Node.js
 
 npm
 
-📥 Clone the Repository
+<h2>📥 Clone the Repository</h2>
 git clone https://github.com/your-username/your-portfolio-repo.git
 cd your-portfolio-repo
 
@@ -67,7 +61,6 @@ Create a .env file in the root directory and add:
 VITE_APP_EMAILJS_SERVICE_ID=
 VITE_APP_EMAILJS_TEMPLATE_ID=
 VITE_APP_EMAILJS_PUBLIC_KEY=
-
 
 Replace these values with your EmailJS credentials to enable the contact form.
 
