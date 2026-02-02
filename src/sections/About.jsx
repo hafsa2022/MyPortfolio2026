@@ -99,9 +99,13 @@ const About = () => {
 
             <div className="project grid-violet-color grid-1" ref={libraryRef}>
               <div className="z-10 w-[50%]">
-                <h3 className="font-bold">“First, solve the problem. Then, write the code.”</h3>
+                {/* <h3 className="font-bold">“First, solve the problem. Then, write the code.”</h3>
                 <p className="text-sm md:text-base text-pretty text-[#9187b7]">
                  — John Johnson
+                </p> */}
+                 <h2 className="">— John Johnson</h2>
+                <p className="text-sm md:text-base text-pretty text-[#9187b7]">
+                  “First, solve the problem. Then, write the code.”
                 </p>
               </div>
               <img
