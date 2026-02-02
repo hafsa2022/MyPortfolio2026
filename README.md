@@ -1,16 +1,70 @@
-# React + Vite
+<div align="center"><h1>3D Portfolio Website </h1></div>
+<h2>🤖 Introduction</h2>
+This project is a modern 3D portfolio website designed to showcase my skills, projects, and experience in an interactive and visually engaging way.
+It features animated 3D models, smooth camera transitions, and responsive layouts, making it ideal for presenting creative and technical work in a professional manner.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The goal of this portfolio is to stand out by combining web development and 3D experiences, while maintaining performance and accessibility across devices.
 
-Currently, two official plugins are available:
+<h2>⚙️ Tech Stack</h2>
+<ul>
+  <li>Three.js</li>
+  <li>React Three Fiber</li>
+  <li>Drei</li>
+  <li>GSAP</li>
+  <li>React 19</li>
+  <li>Vite</li>
+  <li>Tailwind CSS</li>
+</ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>🔋 Features</h2>
+<ul>
+  <li>Interactive and animated 3D models</li>
+  <li>Smooth GSAP-powered animations and scroll effects</li>
+  <li>Realistic lighting and shadows</li>
+  <li>Responsive design using Tailwind CSS and Flexbox/Grid</li>
+  <li>Micro-interactions for better user experience</li>
+  <li>Multi-section layout</li>
+  <li>Optimized 3D experience for mobile devices</li>
+  <li>Clean code structure and reusable components</li>
+  
+<h2>🤸 Quick Start</h2>
+Follow these steps to run the project locally.
 
-## React Compiler
+✅ Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Make sure you have the following installed:
+<ul>
+  <li>Git</li>
+  <li>Node.js</li>
+  <li>npm</li>
+</ul>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📥 Clone the Repository :
+
+      git clone https://github.com/hafsa2022/MyPortfolio2026.git
+      cd MyPortfolio2026
+
+📦 Install Dependencies:
+
+    npm install
+
+🔐 Environment Variables
+
+  Create a .env file in the root directory and add:
+
+    VITE_APP_EMAILJS_SERVICE_ID=
+    VITE_APP_EMAILJS_TEMPLATE_ID=
+    VITE_APP_EMAILJS_PUBLIC_KEY=
+
+  Replace these values with your EmailJS credentials to enable the contact form.
+
+▶️ Run the Project:
+
+    npm run dev
+
+Open http://localhost:5173 in your browser to view the project.
+
+⭐ Acknowledgements
+
+This portfolio is inspired by modern 3D web experiences and built using open-source tools from the Three.js and React ecosystem.
