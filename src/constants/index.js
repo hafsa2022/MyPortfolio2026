@@ -177,10 +177,9 @@ const myProjects = [
   {
     id: 1,
     title: "AI Resume Analyzer",
-    description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+    description: "",
     subDescription: [
-      " AI-powered resume analysis",
+      "AI-powered resume analysis",
       "ATS score calculation to evaluate compatibility with recruitment systems",
       "Resume ↔ job description matching",
       "Simple dashboard to visualize results and key statistics",
@@ -202,13 +201,18 @@ const myProjects = [
       },
       {
         id: 3,
+        name: "TailwindCSS",
+        path: "/images/tailwindcss.svg",
+      },
+       {
+        id: 4,
         name: "Puter.js",
         path: "/images/puter_js.png",
       },
       {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/images/tailwindcss.svg",
+        id: 5,
+        name: "Git",
+        path: "/images/git.svg",
       },
     ],
   },
@@ -235,6 +239,11 @@ const myProjects = [
         id: 3,
         name: "TMDB API",
         path: "/images/tmdb_api.png",
+      },
+      {
+        id: 4,
+        name: "Git",
+        path: "/images/git.svg",
       },
     ],
   },
@@ -279,9 +288,11 @@ const myProjects = [
   {
     id: 4,
     title: "Invoice Management App",
-    description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
-    subDescription: [],
+    description: "",
+    subDescription: [
+      "An application that allows users to perform various operations such as searching, creating, updating, uploading, and deleting invoices.",
+      "It provides the functionality to switch between French and English languages.",
+    ],
     href: "https://drive.google.com/file/d/1gRq4IS3QGc1CGuP4lUEA0WhLgKYJARH6/view?usp=sharing",
     logo: "",
     image: "/images/project4.png",
@@ -372,21 +383,16 @@ const myProjects = [
       },
       {
         id: 3,
-        name: "Vuex",
-        path: "/images/vuex.png",
-      },
-      {
-        id: 4,
         name: "MariaDB",
         path: "/images/mariadb.png",
       },
       {
-        id: 5,
+        id: 4,
         name: "JWT Auth",
         path: "/images/jwt.png",
       },
       {
-        id: 6,
+        id: 5,
         name: "Git",
         path: "/images/git.svg",
       },
