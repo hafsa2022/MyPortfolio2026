@@ -24,76 +24,86 @@ const words = [
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
-const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  // {
-  //   name: "Interactive Developer",
-  //   imgPath: "/images/logos/three.png",
-  // },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-  },
-];
+// const techStackImgs = [
+//   {
+//     name: "React Developer",
+//     imgPath: "/images/logos/react.png",
+//   },
+//   {
+//     name: "Python Developer",
+//     imgPath: "/images/logos/python.svg",
+//   },
+//   {
+//     name: "Backend Developer",
+//     imgPath: "/images/logos/node.png",
+//   },
+//   // {
+//   //   name: "Interactive Developer",
+//   //   imgPath: "/images/logos/three.png",
+//   // },
+//   {
+//     name: "Project Manager",
+//     imgPath: "/images/logos/git.svg",
+//   },
+// ];
 
 const techStackIcons = [
   {
+    name: "JavaScript",
     modelPath: "/models/js-transformed.glb",
     scale: 250,
     rotation: [0, 0, 0],
   },
   {
+    name: "React.js",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
+    name: "Vue.js",
     modelPath: "/models/vue_js-transformed.glb",
     scale: 250,
     rotation: [0, 0, 0],
   },
   {
+    name: "OpenLayers",
     modelPath: "/models/openlayers-transformed.glb",
     scale: 150,
     rotation: [0, 0, 0],
   },
   {
+    name: "Python",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
+    name: "Node.js",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
+    name: "Laravel",
     modelPath: "/models/laravel-transformed.glb",
     scale: 5,
     rotation: [0, 0, Math.PI],
   },
   {
+    name: "MongoDB",
     modelPath: "/models/mongodb-transformed.glb",
     scale: 250,
     rotation: [0, Math.PI / 2, 0],
   },
   {
+    name: "PostgreSQL",
     modelPath: "/models/postgresql-transformed.glb",
     scale: 65,
     rotation: [0, 0, Math.PI],
   },
   {
+    name: "Git",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
@@ -416,88 +426,88 @@ const myProjects = [
   },
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: "/images/html5.svg",
-  },
-  {
-    name: "CSS 3",
-    icon: "/images/css3.svg",
-  },
-  {
-    name: "JavaScript",
-    icon: "/images/javascript.png",
-  },
-  {
-    name: "TypeScript",
-    icon: "/images/typescript.png",
-  },
-  {
-    name: "React JS",
-    icon: "/images/react.svg",
-  },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: "/images/redux.png",
-  // },
-  {
-    name: "Vue JS",
-    icon: "/images/vuejs.png",
-  },
-  // {
-  //   name: "Vuetify",
-  //   icon: "/images/vuetify.png",
-  // },
-  // {
-  //   name: "Vuex",
-  //   icon: "/images/vuex.png",
-  // },
-  {
-    name: "Angular",
-    icon: "/images/angular.png",
-  },
-  {
-    name: "Openlayers",
-    icon: "/images/openlayers.png",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "/images/tailwindcss.svg",
-  },
-  {
-    name: "Node JS",
-    icon: "/images/nodejs.png",
-  },
-  {
-    name: "MongoDB",
-    icon: "/images/mongodb.png",
-  },
-  {
-    name: "PostgreSQL",
-    icon: "/images/postgresql.png",
-  },
-  {
-    name: "git",
-    icon: "/images/git.svg",
-  },
-  {
-    name: "figma",
-    icon: "/images/figma.png",
-  },
-  {
-    name: "docker",
-    icon: "/images/docker.png",
-  },
-];
+// const technologies = [
+//   {
+//     name: "HTML 5",
+//     icon: "/images/html5.svg",
+//   },
+//   {
+//     name: "CSS 3",
+//     icon: "/images/css3.svg",
+//   },
+//   {
+//     name: "JavaScript",
+//     icon: "/images/javascript.png",
+//   },
+//   {
+//     name: "TypeScript",
+//     icon: "/images/typescript.png",
+//   },
+//   {
+//     name: "React JS",
+//     icon: "/images/react.svg",
+//   },
+//   // {
+//   //   name: "Redux Toolkit",
+//   //   icon: "/images/redux.png",
+//   // },
+//   {
+//     name: "Vue JS",
+//     icon: "/images/vuejs.png",
+//   },
+//   // {
+//   //   name: "Vuetify",
+//   //   icon: "/images/vuetify.png",
+//   // },
+//   // {
+//   //   name: "Vuex",
+//   //   icon: "/images/vuex.png",
+//   // },
+//   {
+//     name: "Angular",
+//     icon: "/images/angular.png",
+//   },
+//   {
+//     name: "Openlayers",
+//     icon: "/images/openlayers.png",
+//   },
+//   {
+//     name: "Tailwind CSS",
+//     icon: "/images/tailwindcss.svg",
+//   },
+//   {
+//     name: "Node JS",
+//     icon: "/images/nodejs.png",
+//   },
+//   {
+//     name: "MongoDB",
+//     icon: "/images/mongodb.png",
+//   },
+//   {
+//     name: "PostgreSQL",
+//     icon: "/images/postgresql.png",
+//   },
+//   {
+//     name: "git",
+//     icon: "/images/git.svg",
+//   },
+//   {
+//     name: "figma",
+//     icon: "/images/figma.png",
+//   },
+//   {
+//     name: "docker",
+//     icon: "/images/docker.png",
+//   },
+// ];
 
 export {
   words,
   expCards,
   socialImgs,
   techStackIcons,
-  technologies,
-  techStackImgs,
+  // technologies,
+  // techStackImgs,
   navLinks,
   myProjects,
 };

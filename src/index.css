@@ -204,13 +204,13 @@ section {
         @apply text-lg md:text-xl lg:text-2xl font-semibold mt-5;
       }
       .grid-1 {
-        @apply row-span-1 md:col-span-3 h-[15rem] md:h-68 relative overflow-hidden hover:-translate-y-1 duration-200;
+        @apply row-span-1 md:col-span-3 h-65 md:h-65 relative overflow-hidden hover:-translate-y-1 duration-200;
       }
       .grid-black-color {
-        @apply p-6 bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl;
+        @apply p-6 bg-linear-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl;
       }
       .grid-violet-color {
-        @apply p-6 bg-gradient-to-tl from-[#9d7dd2] via-[#5045a6] to-[#322a6b] rounded-2xl;
+        @apply p-6 bg-linear-to-tl from-[#9d7dd2] via-[#5045a6] to-[#322a6b] rounded-2xl;
       }
     }
   }
@@ -257,7 +257,7 @@ section {
   }
 
   .timeline-wrapper {
-    @apply absolute top-0 xl:left-[22vw] md:left-10 left-5 h-full flex justify-center;
+    @apply absolute top-0 xl:left-[12vw] md:left-12 left-5 h-full flex justify-center;
   }
 
   .timeline {

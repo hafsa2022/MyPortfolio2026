@@ -1,14 +1,16 @@
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { expCards } from "../constants";
 import TitleHeader from "../components/TitleHeader";
-import GlowCard from "../components/GlowCard";
+// import GlowCard from "../components/GlowCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Experience = () => {
+  const cardRefs = useRef([]);
   useGSAP(() => {
     // Loop through each timeline card and animate them in
     // as the user scrolls to each card
@@ -89,28 +91,44 @@ const Experience = () => {
     }, "<"); // position parameter - insert at the start of the animation
   }, []);
 
+  const handleMouseMove = (index) => (e) => {
+    // get the current card
+    const card = cardRefs.current[index];
+    if (!card) return;
+
+    // get the mouse position relative to the card
+    const rect = card.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left - rect.width / 2;
+    const mouseY = e.clientY - rect.top - rect.height / 2;
+
+    // calculate the angle from the center of the card to the mouse
+    let angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI);
+
+    // adjust the angle so that it's between 0 and 360
+    angle = (angle + 360) % 360;
+
+    // set the angle as a CSS variable
+    card.style.setProperty("--start", angle + 60);
+  };
   return (
     <section
       id="experience"
       className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
     >
       <div className="w-full h-full md:px-20 px-5">
-        <TitleHeader
-          title="My Experiences"
-          sub="💼 My Career Overview"
-        />
+        <TitleHeader title="My Experiences" sub="💼 My Career Overview" />
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
-                <div className="xl:w-1/6">
+                <div className="xl:w-1/24">
                   {/* <GlowCard card={card}>
                     <div>
                       <img src={card.imgPath} alt="exp-img" />
                     </div>
                   </GlowCard> */}
                 </div>
-                <div className="xl:w-5/6">
+                <div className="xl:w-23/24">
                   <div className="flex items-start">
                     <div className="timeline-wrapper">
                       <div className="timeline" />
@@ -120,7 +138,13 @@ const Experience = () => {
                       <div className="timeline-logo">
                         <img src={card.logoPath} alt="logo" />
                       </div>
-                      <div>
+                      <div
+                        ref={(el) =>
+                          (cardRefs.current[expCards.indexOf(card)] = el)
+                        }
+                        onMouseMove={handleMouseMove(expCards.indexOf(card))}
+                        className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column xl:w-200 md:w-96 w-full"
+                      >
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-white-50">
                           🗓️&nbsp;{card.date}
@@ -134,7 +158,7 @@ const Experience = () => {
                               <li key={index} className="text-lg">
                                 {responsibility}
                               </li>
-                            )
+                            ),
                           )}
                         </ul>
                       </div>

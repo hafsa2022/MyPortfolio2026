@@ -54,11 +54,11 @@ const About = () => {
               <video src="/images/screen.mp4" autoPlay muted loop playsInline />
             </div>
             <div className="text-content">
-              <h2>I’m Hafsa</h2>
-              <p className="text-white-50 md:text-xl">
-                I developed my frontend and backend dev skills to deliver
+              <h2>Who I Am</h2>
+              <h3 className=" md:text-md">
+                I'm <span className="text-white-50">Hafsa EL AKHDAR</span>, I developed my <span className="text-white-50">Frontend</span> and <span className="text-white-50">Backend</span> dev skills to deliver
                 dynamic and web applications.
-              </p>
+              </h3>
             </div>
           </div>
 
@@ -100,7 +100,7 @@ const About = () => {
             <div className="project grid-violet-color grid-1" ref={libraryRef}>
               <div className="z-10 w-[50%]">
                 <h3 className="font-bold">“First, solve the problem. Then, write the code.”</h3>
-                <p className="text-sm md:text-base text-pretty">
+                <p className="text-sm md:text-base text-pretty text-[#9187b7]">
                  — John Johnson
                 </p>
               </div>
