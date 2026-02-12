@@ -204,7 +204,7 @@ const myProjects = [
         name: "TailwindCSS",
         path: "/images/tailwindcss.svg",
       },
-       {
+      {
         id: 4,
         name: "Puter.js",
         path: "/images/puter_js.png",
@@ -218,12 +218,53 @@ const myProjects = [
   },
   {
     id: 2,
+    title: "Urban Dashboard",
+    description:
+      "Interactive GIS Dashboard for Urban Facility Monitoring and Spatial Analysis.",
+    subDescription: [
+      "A web-based GIS dashboard for monitoring and analyzing urban facilities.",
+      "Built with React.js, supabase and OpenLayers.",
+      "Provides interactive maps and data.",
+    ],
+    href: "https://urbandashboard-jet.vercel.app/",
+    logo: "",
+    image: "/images/project2.png",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "/images/react.svg",
+      },
+      {
+        id: 2,
+        name: "Supabase",
+        path: "/images/supabase.png",
+      },
+      {
+        id: 3,
+        name: "TailwindCSS",
+        path: "/images/tailwindcss.svg",
+      },
+      {
+        id: 4,
+        name: "OpenLayers",
+        path: "/images/openlayers.png",
+      },
+      {
+        id: 5,
+        name: "Git",
+        path: "/images/git.svg",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "Movie Search Project",
     description: "A simple web page that allows users to search for movies.",
     subDescription: [],
     href: "https://movies-project-seven-psi.vercel.app/",
     logo: "",
-    image: "/images/project2.png",
+    image: "/images/project3.png",
     tags: [
       {
         id: 1,
@@ -249,14 +290,14 @@ const myProjects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Job Board",
     description:
       "A web application that allows users to search and get new opportunities easy and fast.",
     subDescription: [],
     href: "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_codsoft-angular-bootstrap-activity-7134948433550815233-NnpR?utm_source=share&utm_medium=member_desktop",
     logo: "",
-    image: "/images/project3.png",
+    image: "/images/project4.png",
     tags: [
       {
         id: 1,
@@ -286,7 +327,7 @@ const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Invoice Management App",
     description: "",
     subDescription: [
@@ -294,43 +335,6 @@ const myProjects = [
       "It provides the functionality to switch between French and English languages.",
     ],
     href: "https://drive.google.com/file/d/1gRq4IS3QGc1CGuP4lUEA0WhLgKYJARH6/view?usp=sharing",
-    logo: "",
-    image: "/images/project4.png",
-    tags: [
-      {
-        id: 1,
-        name: "Vue.js",
-        path: "/images/vuejs.png",
-      },
-      {
-        id: 2,
-        name: "Vuetify",
-        path: "/images/vuetify.png",
-      },
-      {
-        id: 3,
-        name: "Vuex",
-        path: "/images/vuex.png",
-      },
-      {
-        id: 4,
-        name: "PostgreSQL",
-        path: "/images/postgresql.png",
-      },
-      {
-        id: 5,
-        name: "Git",
-        path: "/images/git.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Product Management App",
-    description:
-      "This web application allows users to search, create, update, and delete products.",
-    subDescription: [],
-    href: "",
     logo: "",
     image: "/images/project5.png",
     tags: [
@@ -363,13 +367,50 @@ const myProjects = [
   },
   {
     id: 6,
+    title: "Product Management App",
+    description:
+      "This web application allows users to search, create, update, and delete products.",
+    subDescription: [],
+    href: "",
+    logo: "",
+    image: "/images/project6.png",
+    tags: [
+      {
+        id: 1,
+        name: "Vue.js",
+        path: "/images/vuejs.png",
+      },
+      {
+        id: 2,
+        name: "Vuetify",
+        path: "/images/vuetify.png",
+      },
+      {
+        id: 3,
+        name: "Vuex",
+        path: "/images/vuex.png",
+      },
+      {
+        id: 4,
+        name: "PostgreSQL",
+        path: "/images/postgresql.png",
+      },
+      {
+        id: 5,
+        name: "Git",
+        path: "/images/git.svg",
+      },
+    ],
+  },
+  {
+    id: 7,
     title: "Ecommerce Web",
     description:
       "The E-Commerce project built with Spring Boot, Angular, JWT Authentication, and MariaDB is an innovative web application that allows users to browse and purchase a wide range of products.",
     subDescription: [],
     href: "https://github.com/hafsa2022/ecommerce-website-frontend",
     logo: "",
-    image: "/images/project6.png",
+    image: "/images/project7.png",
     tags: [
       {
         id: 1,
@@ -399,14 +440,14 @@ const myProjects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "URL Shortener",
     description:
       "A web page that allows users to shorten long URLs into shorter and easy-to-share links.",
     subDescription: [],
     href: "https://github.com/hafsa2022/url-shortener-frontend",
     logo: "",
-    image: "/images/project7.png",
+    image: "/images/project8.png",
     tags: [
       {
         id: 1,
