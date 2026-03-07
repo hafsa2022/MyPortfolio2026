@@ -113,21 +113,21 @@ const HeroExperience = () => {
         <HeroLights />
         <Particles count={isMobile ? 100 : 200} />{" "}
         {/* Fewer particles on mobile */}
-        <OrbitControls
+        {/* <OrbitControls
           enablePan={false}
           enableZoom={!isTablet}
           maxDistance={20}
           minDistance={5}
           minPolarAngle={Math.PI / 5}
           maxPolarAngle={Math.PI / 2}
-        />
-        <group
+        /> */}
+        {/* <group
           scale={isMobile ? 0.7 : 1}
           position={[0, -3.5, 0]}
           rotation={[0, -Math.PI / 4, 0]}
         >
           <Room />
-        </group>
+        </group> */}
       </Suspense>
     </Canvas>
   );
