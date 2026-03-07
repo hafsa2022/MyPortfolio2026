@@ -73,57 +73,112 @@
 // };
 
 // export default Particles;
-import { useRef, useState, useMemo } from "react";
+// import { useRef, useState, useMemo } from "react";
+// import { useFrame } from "@react-three/fiber";
+
+// const Particles = ({ count = 200 }) => {
+//   const mesh = useRef();
+
+//   const particles = useState(() =>
+//     Array.from({ length: count }, () => ({
+//       position: [
+//         (Math.random() - 0.5) * 10,
+//         Math.random() * 10 + 5,
+//         (Math.random() - 0.5) * 10,
+//       ],
+//       speed: 0.005 + Math.random() * 0.001,
+//     }))
+//   )[0];
+
+//   // ✅ FIX: Move Float32Array into useMemo so it's only created ONCE
+//   // Previously it was outside hooks = recreated on every single render = memory crash on mobile
+//   const positions = useMemo(() => {
+//     const arr = new Float32Array(count * 3);
+//     particles.forEach((p, i) => {
+//       arr[i * 3] = p.position[0];
+//       arr[i * 3 + 1] = p.position[1];
+//       arr[i * 3 + 2] = p.position[2];
+//     });
+//     return arr;
+//   }, [count, particles]);
+
+//   useFrame(() => {
+//     if (!mesh.current) return;
+//     const pos = mesh.current.geometry.attributes.position.array;
+//     for (let i = 0; i < count; i++) {
+//       let y = pos[i * 3 + 1];
+//       y -= particles[i].speed;
+//       if (y < -2) y = Math.random() * 10 + 5;
+//       pos[i * 3 + 1] = y;
+//     }
+//     mesh.current.geometry.attributes.position.needsUpdate = true;
+//   });
+
+//   return (
+//     <points ref={mesh}>
+//       <bufferGeometry>
+//         <bufferAttribute
+//           attach="attributes-position"
+//           count={count}
+//           array={positions}
+//           itemSize={3}
+//         />
+//       </bufferGeometry>
+//       <pointsMaterial
+//         color="#ffffff"
+//         size={0.05}
+//         transparent
+//         opacity={0.9}
+//         depthWrite={false}
+//       />
+//     </points>
+//   );
+// };
+
+// export default Particles;
+
+import { useRef, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
+import * as THREE from "three";
 
 const Particles = ({ count = 200 }) => {
-  const mesh = useRef();
+  const pointsRef = useRef();
+  const geoRef = useRef();
+  const speeds = useRef([]);
 
-  const particles = useState(() =>
-    Array.from({ length: count }, () => ({
-      position: [
-        (Math.random() - 0.5) * 10,
-        Math.random() * 10 + 5,
-        (Math.random() - 0.5) * 10,
-      ],
-      speed: 0.005 + Math.random() * 0.001,
-    }))
-  )[0];
+  // ✅ useEffect runs after mount — geoRef.current is available, Math.random() is safe
+  useEffect(() => {
+    if (!geoRef.current) return;
 
-  // ✅ FIX: Move Float32Array into useMemo so it's only created ONCE
-  // Previously it was outside hooks = recreated on every single render = memory crash on mobile
-  const positions = useMemo(() => {
-    const arr = new Float32Array(count * 3);
-    particles.forEach((p, i) => {
-      arr[i * 3] = p.position[0];
-      arr[i * 3 + 1] = p.position[1];
-      arr[i * 3 + 2] = p.position[2];
-    });
-    return arr;
-  }, [count, particles]);
+    const pos = new Float32Array(count * 3);
+    speeds.current = [];
+
+    for (let i = 0; i < count; i++) {
+      pos[i * 3]     = (Math.random() - 0.5) * 10;
+      pos[i * 3 + 1] = Math.random() * 10 + 5;
+      pos[i * 3 + 2] = (Math.random() - 0.5) * 10;
+      speeds.current.push(0.005 + Math.random() * 0.001);
+    }
+
+    // Set attribute directly on the DOM-attached geometry ref
+    geoRef.current.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  }, [count]);
 
   useFrame(() => {
-    if (!mesh.current) return;
-    const pos = mesh.current.geometry.attributes.position.array;
+    if (!geoRef.current?.attributes?.position) return;
+    const pos = geoRef.current.attributes.position.array;
     for (let i = 0; i < count; i++) {
-      let y = pos[i * 3 + 1];
-      y -= particles[i].speed;
-      if (y < -2) y = Math.random() * 10 + 5;
-      pos[i * 3 + 1] = y;
+      pos[i * 3 + 1] -= speeds.current[i] ?? 0.005;
+      if (pos[i * 3 + 1] < -2) pos[i * 3 + 1] = Math.random() * 10 + 5;
     }
-    mesh.current.geometry.attributes.position.needsUpdate = true;
+    geoRef.current.attributes.position.needsUpdate = true;
   });
 
   return (
-    <points ref={mesh}>
-      <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          count={count}
-          array={positions}
-          itemSize={3}
-        />
-      </bufferGeometry>
+    // ✅ No geometry prop on <points> — avoids .current access during render
+    // <bufferGeometry ref={geoRef} /> is a JSX child, ref is populated after mount
+    <points ref={pointsRef}>
+      <bufferGeometry ref={geoRef} />
       <pointsMaterial
         color="#ffffff"
         size={0.05}
