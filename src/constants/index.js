@@ -217,7 +217,7 @@ const myProjects = [
         path: "/images/nodejs.png",
       },
       {
-        id: 5,
+        id: 6,
         name: "ExpressJs",
         path: "/images/expressjs.png",
       },
@@ -425,7 +425,7 @@ const myProjects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Product Management App",
     description:
       "This web application allows users to search, create, update, and delete products.",
