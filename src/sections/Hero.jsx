@@ -82,6 +82,7 @@ import { words } from "../constants";
 import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
 import EarthCanvas from "../components/canvas/earth";
+import CanvasLoader from "../components/Loader";
 
 const Hero = () => {
   useGSAP(() => {
@@ -140,19 +141,18 @@ const Hero = () => {
         </header>
 
         {/* RIGHT: 3D Model */}
-        {/* <figure>
+        <figure>
           <div className="hero-3d-layout">
-          
-            <Suspense fallback={null}>
+            <Suspense fallback={<CanvasLoader />}>
               <HeroExperience />
             </Suspense>
           </div>
-        </figure> */}
-        <div className="hero-3d-layout">
+        </figure>
+        {/* <div className="hero-3d-layout">
           <div className="mt-4 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
             <EarthCanvas />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
