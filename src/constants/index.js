@@ -532,87 +532,87 @@ const myProjects = [
   // },
 ];
 
-// const technologies = [
-//   {
-//     name: "HTML 5",
-//     icon: "/images/html5.svg",
-//   },
-//   {
-//     name: "CSS 3",
-//     icon: "/images/css3.svg",
-//   },
-//   {
-//     name: "JavaScript",
-//     icon: "/images/javascript.png",
-//   },
-//   {
-//     name: "TypeScript",
-//     icon: "/images/typescript.png",
-//   },
-//   {
-//     name: "React JS",
-//     icon: "/images/react.svg",
-//   },
-//   // {
-//   //   name: "Redux Toolkit",
-//   //   icon: "/images/redux.png",
-//   // },
-//   {
-//     name: "Vue JS",
-//     icon: "/images/vuejs.png",
-//   },
-//   // {
-//   //   name: "Vuetify",
-//   //   icon: "/images/vuetify.png",
-//   // },
-//   // {
-//   //   name: "Vuex",
-//   //   icon: "/images/vuex.png",
-//   // },
-//   {
-//     name: "Angular",
-//     icon: "/images/angular.png",
-//   },
-//   {
-//     name: "Openlayers",
-//     icon: "/images/openlayers.png",
-//   },
-//   {
-//     name: "Tailwind CSS",
-//     icon: "/images/tailwindcss.svg",
-//   },
-//   {
-//     name: "Node JS",
-//     icon: "/images/nodejs.png",
-//   },
-//   {
-//     name: "MongoDB",
-//     icon: "/images/mongodb.png",
-//   },
-//   {
-//     name: "PostgreSQL",
-//     icon: "/images/postgresql.png",
-//   },
-//   {
-//     name: "git",
-//     icon: "/images/git.svg",
-//   },
-//   {
-//     name: "figma",
-//     icon: "/images/figma.png",
-//   },
-//   {
-//     name: "docker",
-//     icon: "/images/docker.png",
-//   },
-// ];
+const technologies = [
+  {
+    name: "HTML 5",
+    icon: "/images/html5.svg",
+  },
+  {
+    name: "CSS 3",
+    icon: "/images/css3.svg",
+  },
+  {
+    name: "JavaScript",
+    icon: "/images/javascript.png",
+  },
+  {
+    name: "TypeScript",
+    icon: "/images/typescript.png",
+  },
+  {
+    name: "React JS",
+    icon: "/images/react.svg",
+  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: "/images/redux.png",
+  // },
+  {
+    name: "Vue JS",
+    icon: "/images/vuejs.png",
+  },
+  // {
+  //   name: "Vuetify",
+  //   icon: "/images/vuetify.png",
+  // },
+  // {
+  //   name: "Vuex",
+  //   icon: "/images/vuex.png",
+  // },
+  {
+    name: "Angular",
+    icon: "/images/angular.png",
+  },
+  {
+    name: "Openlayers",
+    icon: "/images/openlayers.png",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "/images/tailwindcss.svg",
+  },
+  {
+    name: "Node JS",
+    icon: "/images/nodejs.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "/images/mongodb.png",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "/images/postgresql.png",
+  },
+  {
+    name: "git",
+    icon: "/images/git.svg",
+  },
+  {
+    name: "figma",
+    icon: "/images/figma.png",
+  },
+  {
+    name: "docker",
+    icon: "/images/docker.png",
+  },
+];
 
 export {
   words,
   expCards,
   socialImgs,
   techStackIcons,
-  // technologies,
+  technologies,
   // techStackImgs,
   navLinks,
   myProjects,
