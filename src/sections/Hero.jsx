@@ -81,6 +81,7 @@ import { Suspense } from "react";
 import { words } from "../constants";
 import Button from "../components/Button";
 import HeroExperience from "../components/HeroModels/HeroExperience";
+import EarthCanvas from "../components/canvas/earth";
 
 const Hero = () => {
   useGSAP(() => {
@@ -139,14 +140,19 @@ const Hero = () => {
         </header>
 
         {/* RIGHT: 3D Model */}
-        <figure>
+        {/* <figure>
           <div className="hero-3d-layout">
-            {/* Suspense at this level ensures the layout doesn't break if 3D is slow */}
+          
             <Suspense fallback={null}>
               <HeroExperience />
             </Suspense>
           </div>
-        </figure>
+        </figure> */}
+        <div className="hero-3d-layout">
+          <div className="mt-4 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+            <EarthCanvas />
+          </div>
+        </div>
       </div>
     </section>
   );
