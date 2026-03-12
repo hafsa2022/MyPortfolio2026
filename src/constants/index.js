@@ -176,7 +176,7 @@ const socialImgs = [
 const myProjects = [
   {
     id: 1,
-    title: "Ecommerce APP (DressyDrops)",
+    title: "DressyDrops",
     description: "",
     subDescription: [
       "Full Stack eCommerce application built with MERN Stack (React, Node.js, Express, MongoDB).",
@@ -246,7 +246,7 @@ const myProjects = [
     ],
     href: "https://ai-resume-analyser-roan.vercel.app/",
     logo: "",
-    image: "/images/project1.png",
+    image: "/images/project2.png",
     tags: [
       {
         id: 1,
@@ -287,7 +287,7 @@ const myProjects = [
     ],
     href: "https://urbandashboard-jet.vercel.app/",
     logo: "",
-    image: "/images/project2.png",
+    image: "/images/project3.png",
     tags: [
       {
         id: 1,
@@ -323,7 +323,7 @@ const myProjects = [
     subDescription: [],
     href: "https://movies-project-seven-psi.vercel.app/",
     logo: "",
-    image: "/images/project3.png",
+    image: "/images/project4.png",
     tags: [
       {
         id: 1,
@@ -356,7 +356,7 @@ const myProjects = [
     subDescription: [],
     href: "https://www.linkedin.com/posts/hafsa-el-akhdar-92b446198_codsoft-angular-bootstrap-activity-7134948433550815233-NnpR?utm_source=share&utm_medium=member_desktop",
     logo: "",
-    image: "/images/project4.png",
+    image: "/images/project5.png",
     tags: [
       {
         id: 1,
@@ -395,7 +395,7 @@ const myProjects = [
     ],
     href: "https://drive.google.com/file/d/1gRq4IS3QGc1CGuP4lUEA0WhLgKYJARH6/view?usp=sharing",
     logo: "",
-    image: "/images/project5.png",
+    image: "/images/project6.png",
     tags: [
       {
         id: 1,
@@ -432,7 +432,7 @@ const myProjects = [
     subDescription: [],
     href: "",
     logo: "",
-    image: "/images/project6.png",
+    image: "/images/project7.png",
     tags: [
       {
         id: 1,
@@ -532,79 +532,120 @@ const myProjects = [
   // },
 ];
 
-const technologies = [
+// const technologies = [
+//   {
+//     name: "HTML 5",
+//     icon: "/images/html5.svg",
+//   },
+//   {
+//     name: "CSS 3",
+//     icon: "/images/css3.svg",
+//   },
+//   {
+//     name: "JavaScript",
+//     icon: "/images/javascript.png",
+//   },
+//   {
+//     name: "TypeScript",
+//     icon: "/images/typescript.png",
+//   },
+//   {
+//     name: "React JS",
+//     icon: "/images/react.svg",
+//   },
+//   // {
+//   //   name: "Redux Toolkit",
+//   //   icon: "/images/redux.png",
+//   // },
+//   {
+//     name: "Vue JS",
+//     icon: "/images/vuejs.png",
+//   },
+//   // {
+//   //   name: "Vuetify",
+//   //   icon: "/images/vuetify.png",
+//   // },
+//   // {
+//   //   name: "Vuex",
+//   //   icon: "/images/vuex.png",
+//   // },
+//   {
+//     name: "Angular",
+//     icon: "/images/angular.png",
+//   },
+//   {
+//     name: "Openlayers",
+//     icon: "/images/openlayers.png",
+//   },
+//   {
+//     name: "Tailwind CSS",
+//     icon: "/images/tailwindcss.svg",
+//   },
+//   {
+//     name: "Node JS",
+//     icon: "/images/nodejs.png",
+//   },
+//   {
+//     name: "MongoDB",
+//     icon: "/images/mongodb.png",
+//   },
+//   {
+//     name: "PostgreSQL",
+//     icon: "/images/postgresql.png",
+//   },
+//   {
+//     name: "git",
+//     icon: "/images/git.svg",
+//   },
+//   {
+//     name: "figma",
+//     icon: "/images/figma.png",
+//   },
+//   {
+//     name: "docker",
+//     icon: "/images/docker.png",
+//   },
+// ];
+
+const skills = [
+  { skill_name: "HTML", image: "html.png", width: 80, height: 80 },
+  { skill_name: "CSS", image: "css.png", width: 100, height: 100 },
+  { skill_name: "JavaScript", image: "js.png", width: 70, height: 70 },
+  { skill_name: "TypeScript", image: "ts.png", width: 70, height: 70 },
+  { skill_name: "Tailwind CSS", image: "tailwind.png", width: 80, height: 80 },
+  { skill_name: "React", image: "react.png", width: 80, height: 80 },
   {
-    name: "HTML 5",
-    icon: "/images/html5.svg",
+    skill_name: "React Router",
+    image: "react_router.png",
+    width: 80,
+    height: 80,
   },
+  { skill_name: "Vue.js", image: "vuejs.png", width: 70, height: 70 },
+  { skill_name: "Vuetify", image: "vuetify.png", width: 80, height: 80 },
+  { skill_name: "Vuex", image: "vuex.png", width: 80, height: 80 },
+  { skill_name: "Angular", image: "angular.png", width: 80, height: 80 },
+  { skill_name: "Framer Motion", image: "framer.png", width: 80, height: 80 },
+  { skill_name: "JWT", image: "jwt.png", width: 80, height: 80 },
+  { skill_name: "Stripe", image: "stripe.png", width: 80, height: 80 },
+  { skill_name: "Node.js", image: "node.png", width: 80, height: 80 },
+  { skill_name: "Express.js", image: "express.png", width: 80, height: 80 },
+  { skill_name: "Laravel", image: "laravel.png", width: 80, height: 80 },
   {
-    name: "CSS 3",
-    icon: "/images/css3.svg",
+    skill_name: "Spring Boot",
+    image: "spring_boot.png",
+    width: 80,
+    height: 80,
   },
-  {
-    name: "JavaScript",
-    icon: "/images/javascript.png",
-  },
-  {
-    name: "TypeScript",
-    icon: "/images/typescript.png",
-  },
-  {
-    name: "React JS",
-    icon: "/images/react.svg",
-  },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: "/images/redux.png",
-  // },
-  {
-    name: "Vue JS",
-    icon: "/images/vuejs.png",
-  },
-  // {
-  //   name: "Vuetify",
-  //   icon: "/images/vuetify.png",
-  // },
-  // {
-  //   name: "Vuex",
-  //   icon: "/images/vuex.png",
-  // },
-  {
-    name: "Angular",
-    icon: "/images/angular.png",
-  },
-  {
-    name: "Openlayers",
-    icon: "/images/openlayers.png",
-  },
-  {
-    name: "Tailwind CSS",
-    icon: "/images/tailwindcss.svg",
-  },
-  {
-    name: "Node JS",
-    icon: "/images/nodejs.png",
-  },
-  {
-    name: "MongoDB",
-    icon: "/images/mongodb.png",
-  },
-  {
-    name: "PostgreSQL",
-    icon: "/images/postgresql.png",
-  },
-  {
-    name: "git",
-    icon: "/images/git.svg",
-  },
-  {
-    name: "figma",
-    icon: "/images/figma.png",
-  },
-  {
-    name: "docker",
-    icon: "/images/docker.png",
-  },
+  { skill_name: "PostgreSQL", image: "postgresql.png", width: 70, height: 70 },
+  { skill_name: "MySQL", image: "mysql.png", width: 70, height: 70 },
+  { skill_name: "MongoDB", image: "mongodb.png", width: 40, height: 40 },
+  { skill_name: "MariaDB", image: "mariadb.png", width: 70, height: 70 },
+  { skill_name: "Docker", image: "docker.png", width: 70, height: 70 },
+  { skill_name: "Figma", image: "figma.png", width: 50, height: 50 },
+  { skill_name: "Git", image: "git.svg", width: 70, height: 70 },
+  { skill_name: "OpenLayers", image: "openlayers.png", width: 70, height: 70 },
+  { skill_name: "TMDB API", image: "tmdb_api.png", width: 50, height: 50 },
+  { skill_name: "Appwrite", image: "appwrite.png", width: 50, height: 50 },
 ];
 
 export {
@@ -612,7 +653,8 @@ export {
   expCards,
   socialImgs,
   techStackIcons,
-  technologies,
+  // technologies,
+  skills,
   // techStackImgs,
   navLinks,
   myProjects,

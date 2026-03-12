@@ -52,7 +52,7 @@ const Projects = () => {
     >
       <TitleHeader title="Practice Projects" sub="💻 My Selected Projects" />
       <div className="bg-linear-to-r from-transparent via-neutral-700 to-transparent mt-12 h-px w-full" />
-      <div ref={sectionRef}>
+      <div>
         {myProjects.map((project) => (
           <Project key={project.id} {...project} setPreview={setPreview} />
         ))}

@@ -56,8 +56,12 @@ const About = () => {
             <div className="text-content">
               <h2>Who I Am</h2>
               <h3 className=" md:text-md">
-                I'm <span className="text-white-50">Hafsa EL AKHDAR</span>, I developed my <span className="text-white-50">Frontend</span> and <span className="text-white-50">Backend</span> dev skills to deliver
-                dynamic and web applications.
+                I'm{" "}
+                <span className="text-white-50 font-bold">Hafsa EL AKHDAR</span>
+                , I developed my{" "}
+                <span className="text-white-50 font-bold">Frontend</span> and{" "}
+                <span className="text-white-50 font-bold">Backend</span> dev
+                skills to deliver dynamic and web applications.
               </h3>
             </div>
           </div>
@@ -103,7 +107,7 @@ const About = () => {
                 <p className="text-sm md:text-base text-pretty text-[#9187b7]">
                  — John Johnson
                 </p> */}
-                 <h2 className="">— John Johnson</h2>
+                <h2 className="">— John Johnson</h2>
                 <p className="text-sm md:text-base text-pretty text-[#9187b7]">
                   “First, solve the problem. Then, write the code.”
                 </p>
